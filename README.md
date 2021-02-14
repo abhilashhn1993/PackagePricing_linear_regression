@@ -15,7 +15,7 @@ Estimate the price of treatment given the clinical factors at the time of admiss
 
 ## CONCEPTUAL-MODEL 
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/Conceptual_Model.JPG" width="800" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/Conceptual_Model.JPG" width="800" height="400">
 
 ## Data Preparation
 
@@ -40,13 +40,13 @@ Estimate the price of treatment given the clinical factors at the time of admiss
 
 The below graphs illustrates on the correlation between target variable and Hospital Admission - both at Intensive Care Unit and Normal care unit
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/ICU_high_Cor.JPG" width="800" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/ICU_high_Cor.JPG" width="800" height="400">
 
 * Considered ln(Total Cost) instead of Total Cost to Hospital(INR). The total cost value variable has a right skew. Taking the log would make the distribution of our transformed variable appear more symmetric.
 
 From the below graphs we see that the data is normalized by taking the logarthmic value of the variable,
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/Skew_target_var.JPG" width="800" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/Skew_target_var.JPG" width="800" height="400">
 
 
 ### Handling NULL Values
@@ -56,7 +56,7 @@ From the below graphs we see that the data is normalized by taking the logarthmi
 
 ## Statistical-Tests
 
-T-Test and Anova was performed on specific variable to understand their effect on target variable. Code is available [here](https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Code/Ttest_Anova.R)
+T-Test and Anova was performed on specific variable to understand their effect on target variable. Code is available [here](https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Code/Ttest_Anova.R)
 
 T test was performed on variables with 2 categories. The following variables were removed as they proved insignificant,
 
@@ -76,20 +76,20 @@ ANOVA test was done to test for variables with more than two levels and the foll
 
 New categorical variables were derived flagging subjects with multiple health issues. The following are the conditions that were hypothesized based on domain expertise, and T-test was performed
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/interactions.JPG" width="400" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/interactions.JPG" width="400" height="400">
 
 
 ## Model
 
-Click here for the [code](https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Code/Data_prep_modelling.R)
+Click here for the [code](https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/interactions.JPG)
 
 * Logistic Regression Model to understand the relation between target variable and body weight as the predictor variable, (this use case was based on the domain expert's requirement)
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/body_weight.JPG" width="800" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/body_weight.JPG" width="800" height="400">
 
 * Logistic Regression Model to understand the relation between target variable and feature engineered variables,
 
-<img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/intrepretation.JPG" width="400" height="400"><img src="https://github.com/skotak2/Package-Pricing-At-Mission-Hospital/blob/main/Images/model_all_vars.JPG" width="400" height="400">
+<img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/intrepretation.JPG" width="400" height="400"><img src="https://github.com/abhilashhn1993/prediction-of-treatment-Package-Pricing/blob/master/Images/model_all_vars.JPG" width="400" height="400">
 
 ## References
 
